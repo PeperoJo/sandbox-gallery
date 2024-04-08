@@ -8,6 +8,7 @@ body {
   margin: 0 !important;
   /* cursor: none; /* Hide the default cursor */
   cursor: none; /* Hide the default cursor */
+  background-color: var(--bg-color);
 }
 
 .splash {
@@ -15,7 +16,7 @@ body {
   height: 100vh;
   min-height: -webkit-fill-available;
   /* background-color: #F0EFEA; */
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
   color: var(--text-color);
   display: flex;
   justify-content: center;
