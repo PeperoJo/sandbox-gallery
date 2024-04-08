@@ -1,3 +1,9 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #313638;
+}
+
+
 body {
   margin: 0 !important;
 }
@@ -6,10 +12,14 @@ body {
   width: 100vw;
   height: 100vh;
   min-height: -webkit-fill-available;
-  background-color: #F0EFEA;
+  /* background-color: #F0EFEA; */
+  background-color: var(--bg-color);
+  color: var(--text-color);
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: background-color 2s, color 2s;
 }
 
 .info {
@@ -29,7 +39,7 @@ body {
 
   font-size: 32px;
   /* font-style: italic; */
-  color: #4C4C4A;
+  /* color: var(--text-color); */
   /* text-align: center; */
   padding-left: 25px;
 
@@ -39,7 +49,8 @@ body {
   /* font-family: 'Roboto', sans-serif;
   font-size: 15px; */
   font-weight: 400;
-  color: #4C4C4A;
+  /* color: #4C4C4A; */
+  /* color: var(--text-color); */
   /* text-align: center; */
   padding-left: 25px;
   padding-right: 25px;
