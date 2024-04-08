@@ -1,35 +1,20 @@
-// const cursorCircle = document.createElement('div');
-// cursorCircle.classList.add('cursor-circle');
-// document.body.appendChild(cursorCircle);
-//
-// const cursorSquare = document.createElement('div');
-// cursorSquare.classList.add('cursor-square');
-// document.body.appendChild(cursorSquare);
-//
-// const cursorTriangle = document.createElement('div');
-// cursorTriangle.classList.add('cursor-triangle');
-// document.body.appendChild(cursorTriangle);
-//
-// document.addEventListener('mousemove', (e) => {
-//   cursorCircle.style.left = `${e.clientX}px`;
-//   cursorCircle.style.top = `${e.clientY}px`;
-//   cursorSquare.style.left = `${e.clientX}px`;
-//   cursorSquare.style.top = `${e.clientY}px`;
-//   cursorTriangle.style.left = `${e.clientX}px`;
-//   cursorTriangle.style.top = `${e.clientY}px`;
+const cursor = document.createElement('div');
+cursor.classList.add('cursor');
+document.body.appendChild(cursor);
+
+document.addEventListener('mousemove', (e) => {
+  cursor.style.left = `${e.clientX-8}px`;
+  cursor.style.top = `${e.clientY-8}px`;
+});
+
+// Add event listener for mouseover on links
+// document.querySelectorAll('a').forEach(link => {
+//   link.addEventListener('mouseover', () => {
+//     cursor.classList.add('cursor-triangle'); // Change cursor to triangle shape
+//     cursor.classList.remove('cursor');
+//   });
+//   link.addEventListener('mouseout', () => {
+//     cursor.classList.remove('cursor-triangle'); // Revert back to circle shape
+//     cursor.classList.add('cursor');
+//   });
 // });
-//
-// document.addEventListener('mousedown', () => {
-//   cursorCircle.style.backgroundColor = getInverseColor(getComputedStyle(cursorCircle).backgroundColor);
-//   cursorSquare.style.backgroundColor = getInverseColor(getComputedStyle(cursorSquare).backgroundColor);
-// });
-//
-// document.addEventListener('mouseup', () => {
-//   cursorCircle.style.backgroundColor = getComputedStyle(document.body).getPropertyValue('--text-color');
-//   cursorSquare.style.backgroundColor = getComputedStyle(document.body).getPropertyValue('--text-color');
-// });
-//
-// function getInverseColor(color) {
-//   // Assuming color is in hex format (#rrggbb)
-//   return '#' + (0xFFFFFF - parseInt(color.replace('#', ''), 16)).toString(16).padStart(6, '0');
-// }

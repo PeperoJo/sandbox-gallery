@@ -7,6 +7,7 @@
 body {
   margin: 0 !important;
   /* cursor: none; /* Hide the default cursor */
+  cursor: none; /* Hide the default cursor */
 }
 
 .splash {
@@ -115,3 +116,23 @@ a:visited {
 
 
 /* cursor */
+.cursor {
+  width: 16px; /* Set cursor size to 15px */
+  height: 16px; /* Set cursor size to 15px */
+  border-radius: 50%;
+  background-color: var(--text-color); /* Set cursor color to match text color */
+  position: absolute;
+  pointer-events: none; /* Allow clicks to pass through */
+  transition: background-color 0.3s;
+}
+
+.cursor-triangle {
+  /* display: none; /* Hide triangle cursor by default */ */
+  width: 0;
+  height: 0;
+  border-left: 7.5px solid transparent;
+  border-right: 7.5px solid transparent;
+  border-bottom: 15px solid var(--text-color); /* Triangle pointing downwards */
+  position: absolute;
+  cursor: default;
+}
