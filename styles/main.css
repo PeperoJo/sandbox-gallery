@@ -1,0 +1,80 @@
+body {
+  margin: 0 !important;
+}
+
+.splash {
+  width: 100vw;
+  height: 100vh;
+  min-height: -webkit-fill-available;
+  background-color: #F0EFEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  width:100%;
+  max-width: 575px;
+  padding: 12.5px;
+
+}
+
+.h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 35px;
+  font-weight: 600;
+  font-style: italic;
+  color: #4C4C4A;
+  /* text-align: center; */
+  padding-left: 25px;
+
+}
+
+.b1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #4C4C4A;
+  /* text-align: center; */
+  padding-left: 25px;
+  padding-right: 25px;
+
+}
+
+.korean {
+  font-family: 'Gowun Batang', serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.pronounce {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.definition {
+  padding-top: 15px;
+}
+
+a {
+  color: inherit;
+}
+
+a:link {
+  text-decoration-style: dotted;
+  text-underline-offset: 5px;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/* a:hover {
+  color: inherit;
+  text-decoration: line-through;
+} */
