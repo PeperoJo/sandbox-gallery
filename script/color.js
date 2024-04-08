@@ -51,13 +51,13 @@ function fadeInColors() {
     changeColors();
     setTimeout(() => {
       body.style.transition = 'background-color 2s, color 2s';
-    }, 3000); // Pause for 3 seconds before fading into another random pair
-  }, 2000); // Initial delay of 2 seconds
+    }, 2000); // Pause for 2 seconds before fading into another random pair
+  }, 500); // Initial delay of 1 seconds
 }
 
 setTimeout(() => {
   fadeInColors();
   setInterval(() => {
     fadeInColors(); // Repeat every 6 seconds (3s pause + 3s transition)
-  }, 6000);
+  }, 4500);
 }, 500); // Initial delay of 2 seconds
